@@ -1,7 +1,3 @@
-import json
-import os
-import sys
-
 from modules.config import init_config
 from modules.tagger import tag
 

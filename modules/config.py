@@ -19,7 +19,6 @@ def init_config(config_file):
         sys.exit(-1)
 
     # Read passed in Arguments
-    required = lambda x: not x in load
     add_config(
         parser,
         load,
