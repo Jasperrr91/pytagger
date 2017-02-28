@@ -1,1 +1,27 @@
-git
+{
+  "lexicon": "resources/NRC-emotion-lexicon-wordlevel-alphabetized-v0.92.txt",
+  "intensifiers": {
+    "enabled": "False",
+    "file": "resources/intensifiers.txt"
+  },
+  "weakeners": {
+    "enabled": "False",
+    "file": "resources/weakeners.txt"
+  },
+  "polarity_shifters": {
+    "enabled": "False",
+    "file": "resources/polarity_shifters.txt"
+  },
+  "tags": [
+    "anger",
+    "anticipation",
+    "disgust",
+    "fear",
+    "joy",
+    "negative",
+    "positive",
+    "sadness",
+    "surprise",
+    "trust"
+  ]
+}
