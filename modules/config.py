@@ -1,6 +1,7 @@
 import argparse
 import json
 import os
+import sys
 
 def init_config(config_file):
     parser = argparse.ArgumentParser()
@@ -9,7 +10,7 @@ def init_config(config_file):
 
     if os.path.isfile(config_file):
         try:
-            with open(config_file, 'rb') as data:
+            with open(config_file, encoding='utf-8') as data:
                 load.update(json.load(data))
         except ValueError:
             print('Invalid configuration file')
