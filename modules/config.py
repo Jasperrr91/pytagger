@@ -3,10 +3,13 @@ import json
 import os
 import sys
 
-def init_config(config_file):
+def init_config():
     parser = argparse.ArgumentParser()
 
     load = {}
+
+    this_dir, this_filename = os.path.split(__file__)
+    config_file = os.path.join(this_dir, "..", "config", "config.json")
 
     if os.path.isfile(config_file):
         try:

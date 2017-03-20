@@ -1,4 +1,4 @@
-from modules.parser import parse_lexicon
+from .parser import parse_lexicon
 
 def tag(config):
     counter = {}
@@ -18,4 +18,4 @@ def tag(config):
         except KeyError:
             continue
 
-    print(counter)
+    return counter

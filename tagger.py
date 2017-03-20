@@ -1,9 +1,15 @@
-from modules.config import init_config
-from modules.tagger import tag
+from modules import init_config
+from modules import tag
+
+def doTag(text=False):
+    config = init_config()
+
+    if text:
+        config.text = text
+
+    return tag(config)
 
 if __name__ == "__main__":
-    config = init_config('config/config.json')
-    from pprint import pprint
-    pprint(config)
+    tags = doTag()
 
-    tag(config)
+    print(tags)

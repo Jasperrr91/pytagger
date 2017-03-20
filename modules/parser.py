@@ -1,6 +1,11 @@
-from modules.functions import preg_match
+import os
+
+from .functions import preg_match
 
 def parse_lexicon(file):
+    this_dir, this_filename = os.path.split(__file__)
+    file = os.path.join(this_dir, "..", file)
+
     data = {}
 
     with open(file) as f:
