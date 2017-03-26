@@ -49,8 +49,6 @@ def init_config():
     )
 
     config = parser.parse_args()
-    if not config.text and 'text' not in load:
-        config.text = input("Text to tag: ")
 
     fix_nested_config(config)
     return config
